@@ -61,7 +61,7 @@ export function Hero() {
                 </div>
                 <div className="flex-1 text-center">
                   <div className="mx-auto max-w-xs rounded-md bg-slate-100 px-4 py-1 text-xs text-slate-500">
-                    app.donmeca.com.ar
+                    donmeca.vercel.app
                   </div>
                 </div>
               </div>
