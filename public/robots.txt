@@ -1,0 +1,11 @@
+# Robots.txt para DonMeca
+# https://donmeca.com.ar
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://donmeca.com.ar/sitemap.xml
+
+# Crawl delay para evitar sobrecarga (opcional)
+Crawl-delay: 1
