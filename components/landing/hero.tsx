@@ -49,7 +49,7 @@ export function Hero() {
                   size="lg"
                   className="text-base px-8 py-6 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
                 >
-                  Empezar Prueba Gratuita (30 días)
+                  Empezar Prueba Gratuita (7 días)
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>

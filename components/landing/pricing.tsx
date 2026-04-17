@@ -55,9 +55,9 @@ export function Pricing() {
           >
             <Sparkles className="mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" />
             <span className="hidden sm:inline">
-              PRIMER MES GRATIS en ambos planes. Sin compromisos.
+              7 Días de prueba en ambos planes. Sin compromisos.
             </span>
-            <span className="sm:hidden">1er mes gratis</span>
+            <span className="sm:hidden">7d de prueba</span>
           </Badge>
         </motion.div>
       </div>

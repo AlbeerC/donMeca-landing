@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | DonMeca - Gestión de Talleres",
   },
   description:
-    "DonMeca: Orden para tu taller, tiempo para vos. Sistema de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock, presupuestos y caja desde cualquier dispositivo. Probalo gratis 30 días.",
+    "DonMeca: Orden para tu taller, tiempo para vos. Sistema de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock, presupuestos y caja desde cualquier dispositivo. Probalo gratis 7 días.",
   keywords: [
     "software taller mecánico",
     "gestión taller mecánico",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DonMeca | Orden para tu taller, tiempo para vos",
     description:
-      "Software de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock y caja sin complicaciones. Probalo gratis 30 días.",
+      "Software de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock y caja sin complicaciones. Probalo gratis 7 días.",
     url: "https://sistemadonmeca.vercel.app/",
     siteName: "DonMeca",
     images: [
