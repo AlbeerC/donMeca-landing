@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Funciones", href: "#funciones" },
   { label: "Precios", href: "#precios" },
   { label: "FAQ", href: "#faq" },
-]
+];
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-slate-200/50">
@@ -20,9 +20,9 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <img 
-              src="/donmeca-logo.png" 
-              alt="DonMeca - Software de Gestión para Talleres Mecánicos" 
+            <img
+              src="/donmeca-logo.png"
+              alt="DonMeca - Sistema de Gestión para Talleres Mecánicos"
               className="h-10 w-10 object-contain"
             />
             <span className="text-lg font-bold text-slate-950">DonMeca</span>
@@ -43,12 +43,13 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Iniciar Sesión
-            </Button>
-            <Button size="sm">
-              Prueba Gratis
-            </Button>
+            <a
+              href="https://sistemadonmeca.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="sm">Prueba Gratis</Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,12 +88,7 @@ export function Header() {
                   </a>
                 ))}
                 <div className="pt-4 border-t border-slate-200 space-y-3">
-                  <Button variant="outline" className="w-full">
-                    Iniciar Sesión
-                  </Button>
-                  <Button className="w-full">
-                    Prueba Gratis
-                  </Button>
+                  <Button className="w-full">Prueba Gratis</Button>
                 </div>
               </div>
             </motion.div>
@@ -100,5 +96,5 @@ export function Header() {
         </AnimatePresence>
       </nav>
     </header>
-  )
+  );
 }

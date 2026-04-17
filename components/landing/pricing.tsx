@@ -1,53 +1,63 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Check, Sparkles, ArrowRight } from "lucide-react"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Check, Sparkles, ArrowRight } from "lucide-react";
 
 const plans = [
   {
     name: "Plan Básico",
     price: "20.000",
-    description: "Ideal para talleres chicos",
+    description: "Ideal para talleres chicos o unipersonales",
     features: [
       "Todos los 10 módulos incluidos",
-      "Usuarios ilimitados",
+      "1 usuario administrador",
+      "Acceso completo a todas las funciones",
       "Acceso desde cualquier dispositivo",
       "Respaldo automático en la nube",
-      "Soporte por email",
+      "Soporte por whatsapp",
     ],
     popular: false,
   },
   {
     name: "Plan Pro",
     price: "30.000",
-    description: "Gestión avanzada y soporte prioritario",
+    description: "Para talleres con empleados",
     features: [
-      "Todo lo del Plan Básico",
-      "Reportes avanzados",
-      "Integraciones con proveedores",
+      "Todos los 10 módulos incluidos",
+      "Múltiples usuarios con roles",
+      "1 Admin + Staff ilimitados",
+      "Control de acceso por rol (Staff con permisos restringidos)",
+      "Acceso desde cualquier dispositivo",
+      "Respaldo automático en la nube",
       "Soporte prioritario por WhatsApp",
-      "Capacitación personalizada",
-      "Múltiples sucursales",
     ],
     popular: true,
   },
-]
+];
 
 export function Pricing() {
   return (
     <section className="bg-slate-50 py-20 sm:py-28 relative overflow-hidden">
-      {/* Sticky Badge */}
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 sm:bottom-6">
+      <div className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 sm:bottom-6 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.4 }}
         >
-          <Badge className="bg-primary text-white px-4 py-2 text-sm font-semibold shadow-lg shadow-primary/25">
-            <Sparkles className="mr-2 h-4 w-4" />
-            PRIMER MES GRATIS en ambos planes. Sin compromisos.
+          <Badge
+            className="
+        bg-primary text-white font-semibold shadow-lg shadow-primary/25
+        px-3 py-1.5 text-xs
+        sm:px-4 sm:py-2 sm:text-sm
+      "
+          >
+            <Sparkles className="mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" />
+            <span className="hidden sm:inline">
+              PRIMER MES GRATIS en ambos planes. Sin compromisos.
+            </span>
+            <span className="sm:hidden">1er mes gratis</span>
           </Badge>
         </motion.div>
       </div>
@@ -64,7 +74,8 @@ export function Pricing() {
             Precios simples, sin sorpresas
           </h2>
           <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-            Elegí el plan que mejor se adapte a tu taller. Podés cambiar en cualquier momento.
+            Elegí el plan que mejor se adapte a tu taller. Podés cambiar en
+            cualquier momento.
           </p>
         </motion.div>
 
@@ -91,10 +102,16 @@ export function Pricing() {
               )}
 
               <div className="text-center">
-                <h3 className="text-xl font-semibold text-slate-950">{plan.name}</h3>
-                <p className="mt-2 text-sm text-slate-600">{plan.description}</p>
+                <h3 className="text-xl font-semibold text-slate-950">
+                  {plan.name}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600">
+                  {plan.description}
+                </p>
                 <div className="mt-6">
-                  <span className="text-4xl font-bold text-slate-950">${plan.price}</span>
+                  <span className="text-4xl font-bold text-slate-950">
+                    ${plan.price}
+                  </span>
                   <span className="text-slate-600">/mes</span>
                 </div>
               </div>
@@ -109,20 +126,27 @@ export function Pricing() {
               </ul>
 
               <Button
-                className={`mt-8 w-full py-6 text-base ${
+                asChild
+                className={`mt-8 w-full py-6 text-base cursor-pointer ${
                   plan.popular
                     ? "shadow-lg shadow-primary/25"
-                    : "bg-slate-900 hover:bg-slate-800"
+                    : "bg-slate-900 hover:bg-slate-800 text-white"
                 }`}
-                variant={plan.popular ? "default" : "secondary"}
+                variant={plan.popular ? "default" : "default"}
               >
-                Empezar Prueba Gratis
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a
+                  href="https://sistemadonmeca.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Empezar Prueba Gratis
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://donmeca.com.ar"),
   title: {
     default:
-      "DonMeca | Software de Gestión para Talleres Mecánicos en Argentina",
+      "DonMeca | Sistema de Gestión para Talleres Mecánicos en Argentina",
     template: "%s | DonMeca - Gestión de Talleres",
   },
   description:
-    "DonMeca: Orden para tu taller, tiempo para vos. Software de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock, presupuestos y caja desde cualquier dispositivo. Probalo gratis 30 días.",
+    "DonMeca: Orden para tu taller, tiempo para vos. Sistema de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock, presupuestos y caja desde cualquier dispositivo. Probalo gratis 30 días.",
   keywords: [
     "software taller mecánico",
     "gestión taller mecánico",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "caja diaria taller",
     "DonMeca",
   ],
-  authors: [{ name: "DonMeca", url: "https://donmeca.com.ar" }],
+  authors: [{ name: "DonMeca", url: "https://github.com/AlbeerC" }],
   creator: "DonMeca",
   publisher: "DonMeca",
   formatDetection: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "DonMeca | Orden para tu taller, tiempo para vos",
     description:
       "Software de gestión para talleres mecánicos argentinos. Controlá trabajos, clientes, stock y caja sin complicaciones. Probalo gratis 30 días.",
-    url: "https://donmeca.com.ar",
+    url: "https://sistemadonmeca.vercel.app/",
     siteName: "DonMeca",
     images: [
       {

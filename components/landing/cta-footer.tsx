@@ -42,7 +42,7 @@ export function CTAFooter() {
                   rel="noopener noreferrer"
                 >
                   <MessageCircle className="mr-3 h-6 w-6" />
-                  Escribinos al +54 2284 231048
+                  Escribime al +54 2284 231048
                 </a>
               </Button>
             </motion.div>
@@ -65,7 +65,7 @@ export function CTAFooter() {
                 <span className="text-xl font-bold text-white">DonMeca</span>
               </div>
               <p className="mt-4 text-slate-400 max-w-sm">
-                Orden para tu taller, tiempo para vos. Software de gestión diseñado especialmente para talleres mecánicos argentinos.
+                Orden para tu taller, tiempo para vos. Sistema de gestión diseñado especialmente para talleres mecánicos argentinos.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export function CTAFooter() {
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   <a href="mailto:hola@donmeca.com.ar" className="hover:text-white transition-colors">
-                    hola@donmeca.com.ar
+                    caminosalbertodev@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
